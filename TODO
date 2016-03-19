@@ -1,11 +1,13 @@
 ===[ Web ]===
 
 * outbound email sending (update notifications etc)
+* separate web and drupal dirs
+* better handling for domain and subdomain. sometimes need only subdomain
 
 ===[ Database ]===
 
-* test seed creation
 * mysql local changes into /etc/mysql/conf.d/ as specified at end of my.cnf
+* make: add option to run non-interactively to import database. (make batch?)
 * postgres
 
 ===[ General ]===
