@@ -52,7 +52,7 @@ cli:
 # need to use shell and basename
 # otherwise rules do not work
 
-build: $(DB_PASS_FILE) $(DB_ROOT_FILE)
+build: $(shell basename "$(DB_PASS_FILE)") $(shell basename "$(DB_ROOT_FILE)")
 	mkdir "$(DB_DATA_DIR)"
 	mkdir "$(DB_LOGS_DIR)"
 	touch "$(DB_LOGS_DIR)"/error.log
