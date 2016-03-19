@@ -1,4 +1,5 @@
 backups
+bin/hourly
 conf/apache2.conf
 conf/config.mk
 db/data
@@ -9,4 +10,4 @@ web/cache
 web/data
 web/files
 web/logs
-/web/private
+web/private
