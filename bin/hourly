@@ -1,0 +1,3 @@
+#!/bin/bash
+
+make -C /www/waalaskala drush DRUSH_ARGS='drush cron'

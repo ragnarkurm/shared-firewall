@@ -1,0 +1,21 @@
+===[ Web ]===
+
+* outbound email sending (update notifications etc)
+
+===[ Database ]===
+
+* test seed creation
+* mysql local changes into /etc/mysql/conf.d/ as specified at end of my.cnf
+
+===[ General ]===
+
+* general git
+* general cron
+* general full tgz backup of whole stuff with: make backup_full TARGET=...
+* general regular backups
+* genaral limit number of backups
+* general update
+* general logrotate
+* general docker composer
+* general monitoring
+* general benchmarking

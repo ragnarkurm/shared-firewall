@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+	echo "Usage: $0 <backups_dir>"
+	exit 1
+fi
+
+dir="$1";
+
+if [ ! -d "$dir" ]; then
+	echo "$dir: Must be existing directory"
+	exit 1
+fi
+
+find "$dir" -mindepth 1 -maxdepth 1 -type d \
+| sort -n \
+| tail -n 1

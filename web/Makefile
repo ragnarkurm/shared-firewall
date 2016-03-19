@@ -1,0 +1,97 @@
+include ../conf/config.mk
+
+BACKUP_OBJECTS = \
+	"$(WEB_CACHE_DIR)" \
+	"$(WEB_DATA_DIR)" \
+	"$(WEB_FILES_DIR)" \
+	"$(WEB_LOGS_DIR)" \
+	"$(WEB_PRIVATE_DIR)" \
+
+all:
+	@echo
+	@echo "make perms"
+	@echo "make start_rw"
+	@echo "make start"
+	@echo "make stop"
+	@echo "make backup"
+	@echo "make restore"
+	@echo "make restore RESTORE_SOURCE='...'"
+	@echo
+
+perms:
+	sudo chown -R www-data:www-data "$(WEB_CACHE_DIR)"
+	sudo find "$(WEB_CACHE_DIR)" -type d -exec chmod 2775 {} \;
+	sudo find "$(WEB_CACHE_DIR)" -type f -exec chmod 0664 {} \;
+	true
+	sudo chown -R "`id -u`:`id -g`" "$(WEB_DATA_DIR)"
+	sudo find "$(WEB_DATA_DIR)" -type d -exec chmod 0755 {} \;
+	sudo find "$(WEB_DATA_DIR)" -type f -exec chmod 0644 {} \;
+	sudo install -o www-data -g www-data -m 2775 -d "$(WEB_DATA_DIR)"/cache
+	sudo install -o www-data -g www-data -m 2775 -d "$(WEB_DATA_DIR)"/sites/default/files
+	true
+	sudo chown -R www-data:www-data "$(WEB_FILES_DIR)"
+	sudo find "$(WEB_FILES_DIR)" -type d -exec chmod 2775 {} \;
+	sudo find "$(WEB_FILES_DIR)" -type f -exec chmod 0664 {} \;
+	true
+	sudo chown -R root:root "$(WEB_LOGS_DIR)"
+	sudo find "$(WEB_LOGS_DIR)" -type d -exec chmod 0755 {} \;
+	sudo find "$(WEB_LOGS_DIR)" -type f -exec chmod 0644 {} \;
+	true
+	sudo chown -R www-data:www-data "$(WEB_PRIVATE_DIR)"
+	sudo find "$(WEB_PRIVATE_DIR)" -type d -exec chmod 2775 {} \;
+	sudo find "$(WEB_PRIVATE_DIR)" -type f -exec chmod 0664 {} \;
+
+start_rw:
+	make start WEB_DATA_ACCESS=rw
+
+# ports - internal and external must be same
+# for drupal internal access, drush and rev proxy
+
+start: stop $(WEB_DATA_DIR)
+	@echo "Starting Web server"
+	@docker run \
+		-d \
+		--name "$(WEB_CONTAINER)" \
+		--link "$(DB_CONTAINER)":$(DB_LINK) \
+		-p "$(WEB_IP)":$(WEB_PORT):$(WEB_PORT) \
+		-e APACHE_SERVERNAME="$(WEB_DOMAIN)" \
+		-e APACHE_PORT="$(WEB_PORT)" \
+		-e APACHE_LOG_DIR="/logs" \
+		-v "$(WEB_CONF)":/etc/apache2/sites-enabled/default.conf \
+		-v "$(WEB_DATA_DIR)"/:/data/:$(WEB_DATA_ACCESS) \
+		-v "$(WEB_FILES_DIR)"/:/data/sites/default/files/ \
+		-v "$(WEB_CACHE_DIR)"/:/data/cache/ \
+		-v "$(WEB_PRIVATE_DIR)"/:/private/ \
+		-v "$(WEB_LOGS_DIR)"/:/logs/ \
+		--tmpfs=/tmp \
+		--restart=unless-stopped \
+		--hostname="$(WEB_DOMAIN)" \
+		--hostname=www."$(WEB_DOMAIN)" \
+		apache2-php5
+
+stop:
+	@echo "Stopping Web server"
+	@-docker rm `docker ps -a --filter name="$(WEB_CONTAINER)" --filter status=created --format '{{.ID}}'` >/dev/null 2>&1
+	@-docker stop `docker ps -a --filter name="$(WEB_CONTAINER)" --filter status=running --format '{{.ID}}'` >/dev/null 2>&1
+	@-docker rm `docker ps -a --filter name="$(WEB_CONTAINER)" --filter status=exited --format '{{.ID}}'` >/dev/null 2>&1
+
+#
+#	backup & restore
+#
+
+backup:
+	test ! -z "$(BACKUP_DESTINATION)"
+	mkdir -p "$(BACKUP_DESTINATION)"
+	for dir in $(BACKUP_OBJECTS) \
+	; do true \
+		; echo "* $$dir" \
+		; sudo cp -pr "$$dir" "$(BACKUP_DESTINATION)/`basename $$dir`" \
+	; done
+
+restore:
+	test ! -z "$(RESTORE_SOURCE)"
+	for dir in $(BACKUP_OBJECTS) \
+	; do true \
+		; echo "* $$dir" \
+		; sudo rsync -rlpEogtW --delete "$(RESTORE_SOURCE)/`basename $$dir`/" "$$dir" \
+	; done

@@ -1,0 +1,12 @@
+backups
+conf/apache2.conf
+conf/config.mk
+db/data
+db/logs
+db/root.pw
+db/user.pw
+web/cache
+web/data
+web/files
+web/logs
+/web/private
