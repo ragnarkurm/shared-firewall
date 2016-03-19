@@ -6,6 +6,7 @@
 
 * test seed creation
 * mysql local changes into /etc/mysql/conf.d/ as specified at end of my.cnf
+* postgres
 
 ===[ General ]===
 
