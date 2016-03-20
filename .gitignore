@@ -11,3 +11,4 @@ web/data
 web/files
 web/logs
 web/private
+web/ssmtp.conf

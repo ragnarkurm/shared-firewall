@@ -22,6 +22,7 @@ WEB_FILES_DIR = $(WEB_BASE)/files
 WEB_LOGS_DIR = $(WEB_BASE)/logs
 WEB_PRIVATE_DIR = $(WEB_BASE)/private
 WEB_CONF = $(WEB_BASE)/apache2.conf
+WEB_SSMTP = $(WEB_BASE)/ssmtp.conf
 
 # db
 DB_CONTAINER = $(ID)-db

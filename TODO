@@ -1,8 +1,8 @@
 ===[ Web ]===
 
-* outbound email sending (update notifications etc)
-* separate web and drupal dirs
 * better handling for domain and subdomain. sometimes need only subdomain
+* separate web and drupal dirs
+* create conf directory under web/ and add container-specific conf files there
 
 ===[ Database ]===
 

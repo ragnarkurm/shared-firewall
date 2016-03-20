@@ -58,6 +58,7 @@ start: stop $(WEB_DATA_DIR)
 		-e APACHE_PORT="$(WEB_PORT)" \
 		-e APACHE_LOG_DIR="/logs" \
 		-v "$(WEB_CONF)":/etc/apache2/sites-enabled/default.conf \
+		-v "$(WEB_SSMTP)":/etc/ssmtp/ssmtp.conf \
 		-v "$(WEB_DATA_DIR)"/:/data/:$(WEB_DATA_ACCESS) \
 		-v "$(WEB_FILES_DIR)"/:/data/sites/default/files/ \
 		-v "$(WEB_CACHE_DIR)"/:/data/cache/ \
