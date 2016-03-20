@@ -4,6 +4,8 @@
 * create conf directory under web/ and add container-specific conf files there
 * separate web and drupal dirs
 * resource usage specification - how much is apache allowed to consume resources?
+* add vim and less to pkg, to investigate running container
+* add 'make shell' to explore container
 
 ===[ Database ]===
 
