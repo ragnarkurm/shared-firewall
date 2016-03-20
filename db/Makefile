@@ -68,7 +68,7 @@ build: $(shell basename "$(DB_PASS_FILE)") $(shell basename "$(DB_ROOT_FILE)")
 	make perms
 	make start DB_INIT="-e MYSQL_ROOT_PASSWORD='$(DB_ROOT)'"
 	@echo "Sleeping $(TIMEOUT) sec while initializing database"
-	sleep $(TIMEOUT)
+	@sleep $(TIMEOUT)
 	echo "\
 		create database $(DB_NAME) default character set utf8 default collate utf8_general_ci; \
 		create user '$(DB_USER)'@'%' identified by '$(DB_PASS)'; \
