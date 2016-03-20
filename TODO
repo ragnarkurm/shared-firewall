@@ -8,7 +8,6 @@
 ===[ Database ]===
 
 * mysql local changes into /etc/mysql/conf.d/ as specified at end of my.cnf
-* make: add option to run non-interactively to import database. (make batch?)
 * resource usage specification - how much is mysql allowed to consume resources?
 * postgres
 
