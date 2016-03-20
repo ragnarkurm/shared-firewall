@@ -2,7 +2,6 @@
 
 * better handling for domain and subdomain. sometimes need only subdomain
 * create conf directory under web/ and add container-specific conf files there
-* configure less processes per apache than default, since we serve only one site
 * separate web and drupal dirs
 * resource usage specification - how much is apache allowed to consume resources?
 
