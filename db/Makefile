@@ -1,5 +1,8 @@
 include ../conf/config.mk
 
+TIMEOUT = 60
+CLI_FLAGS=-it
+
 BACKUP_OBJECTS = \
 	"$(DB_DATA_DIR)" \
 	"$(DB_LOGS_DIR)" \
@@ -43,11 +46,14 @@ stop:
 
 cli:
 	docker run \
-		-it \
+		$(CLI_FLAGS) \
 		--link "$(DB_CONTAINER):$(DB_LINK)" \
 		--rm \
 		mysql \
 		sh -c 'exec mysql -h"$$MYSQL_PORT_3306_TCP_ADDR" -u"$(DB_USER)" -p"$(DB_PASS)" "$(DB_NAME)"'
+
+cli_notty:
+	make cli CLI_FLAGS=-i
 
 # need to use shell and basename
 # otherwise rules do not work
@@ -60,8 +66,8 @@ build: $(shell basename "$(DB_PASS_FILE)") $(shell basename "$(DB_ROOT_FILE)")
 	touch "$(DB_LOGS_DIR)"/slow.log
 	make perms
 	make start DB_INIT="-e MYSQL_ROOT_PASSWORD='$(DB_ROOT)'"
-	@echo "Sleeping 30 sec while initializing database"
-	sleep 30
+	@echo "Sleeping $(TIMEOUT) sec while initializing database"
+	sleep $(TIMEOUT)
 	echo "\
 		create database $(DB_NAME) default character set utf8 default collate utf8_general_ci; \
 		create user '$(DB_USER)'@'%' identified by '$(DB_PASS)'; \
