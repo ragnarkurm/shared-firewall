@@ -1,5 +1,8 @@
 LogLevel info
 Listen ${APACHE_PORT}
+
+# Read about optimization
+# http://www.liquidweb.com/kb/apache-optimization/
  
 #
 #	Production
