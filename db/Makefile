@@ -13,6 +13,7 @@ all:
 	@echo "make start"
 	@echo "make stop"
 	@echo "make cli"
+	@echo "make cli_notty"
 	@echo "make build"
 	@echo "make backup"
 	@echo "make restore"
