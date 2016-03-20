@@ -6,6 +6,7 @@
 * add vim and less to pkg, to investigate running container
 * add 'make shell' to explore container
 * create reverse proxy image
+* configure apc
 
 ===[ Database ]===
 
