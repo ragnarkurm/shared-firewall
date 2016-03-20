@@ -6,6 +6,7 @@
 * resource usage specification - how much is apache allowed to consume resources?
 * add vim and less to pkg, to investigate running container
 * add 'make shell' to explore container
+* documentation: below 1.10 there is no tmpfs
 
 ===[ Database ]===
 
