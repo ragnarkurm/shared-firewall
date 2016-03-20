@@ -4,11 +4,13 @@
 * create conf directory under web/ and add container-specific conf files there
 * configure less processes per apache than default, since we serve only one site
 * separate web and drupal dirs
+* resource usage specification - how much is apache allowed to consume resources?
 
 ===[ Database ]===
 
 * mysql local changes into /etc/mysql/conf.d/ as specified at end of my.cnf
 * make: add option to run non-interactively to import database. (make batch?)
+* resource usage specification - how much is mysql allowed to consume resources?
 * postgres
 
 ===[ General ]===
