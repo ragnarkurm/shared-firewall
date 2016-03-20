@@ -66,8 +66,7 @@ start: stop $(WEB_DATA_DIR)
 		-v "$(WEB_LOGS_DIR)"/:/logs/ \
 		--tmpfs=/tmp \
 		--restart=unless-stopped \
-		--hostname="$(WEB_DOMAIN)" \
-		--hostname=www."$(WEB_DOMAIN)" \
+		--hostname="$(WEB_CONTAINER)" \
 		apache2-php5
 
 stop:
