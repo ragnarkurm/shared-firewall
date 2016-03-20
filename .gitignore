@@ -8,6 +8,7 @@ db/root.pw
 db/user.pw
 web/cache
 web/data
+web/example.apache2.conf
 web/files
 web/logs
 web/private
