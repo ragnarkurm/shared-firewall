@@ -20,6 +20,7 @@
 ===[ General ]===
 
 * kitematic / docker-composer / https://github.com/james-nesbitt/coach
+* https://docs.docker.com/compose/compose-file/#variable-substitution
 * general git
 * general cron
 * general full tgz backup of whole stuff with: make backup_full TARGET=...
