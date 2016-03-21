@@ -49,13 +49,18 @@ backup2:
 # need to do it in two steps since
 # make cannot assign variables in rules
 restore:
-	test -z "$(RESTORE_SOURCE)" \
-	&& make restore2 RESTORE_SOURCE="`bin/backup-last \"$(BACKUPS)\"`" \
-	|| test `echo "$(RESTORE_SOURCE)" | cut -c1` = '/' \
-	&& make restore2 RESTORE_SOURCE="$(RESTORE_SOURCE)" \
-	|| echo "!!! Expecting absolute path"
+	if [ -z "$(RESTORE_SOURCE)" ]; then \
+		make restore2 RESTORE_SOURCE="`bin/backup-last \"$(BACKUPS)\"`" \
+	; elif [ -d "$(RESTORE_SOURCE)" ]; then \
+		make restore2 RESTORE_SOURCE="`readlink -f \"$(RESTORE_SOURCE)\"`" \
+	; else \
+		echo "!!! Expecting absolute path" \
+	; fi
 	
 restore2:
+	@echo "----------------------------------------------"
+	@echo "Restoring from: $(RESTORE_SOURCE)"
+	@echo "----------------------------------------------"
 	make -C web stop
 	make -C db stop
 	make -C web restore RESTORE_SOURCE="$(RESTORE_SOURCE)/web"
