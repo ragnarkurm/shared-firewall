@@ -30,7 +30,7 @@ stop:
 # need to do it in two steps since
 # make cannot assign variables in rules
 backup:
-	make backup2 BACKUP_DESTINATION="$(BACKUPS)/$(NOW)-`bin/backup-tag`"
+	make backup2 BACKUP_DESTINATION="$(BACKUPS)/$(NOW)--`bin/backup-tag`"
 
 backup2:
 	mkdir -p "$(BACKUP_DESTINATION)"
