@@ -51,7 +51,9 @@ backup2:
 restore:
 	test -z "$(RESTORE_SOURCE)" \
 	&& make restore2 RESTORE_SOURCE="`bin/backup-last \"$(BACKUPS)\"`" \
-	|| make restore2 RESTORE_SOURCE="$(RESTORE_SOURCE)"
+	|| test `echo "$(RESTORE_SOURCE)" | cut -c1` = '/' \
+	&& make restore2 RESTORE_SOURCE="$(RESTORE_SOURCE)" \
+	|| echo "!!! Expecting absolute path"
 	
 restore2:
 	make -C web stop
