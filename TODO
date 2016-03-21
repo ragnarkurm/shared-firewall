@@ -1,18 +1,18 @@
 ===[ Web ]===
 
-* better handling for domain and subdomain. sometimes need only subdomain
+* better handling for domain and subdomain. sometimes need only subdomain.
 * create conf directory under web/ and add container-specific conf files there
 * separate web and drupal dirs
-* resource usage specification - how much is apache allowed to consume resources?
 * add vim and less to pkg, to investigate running container
 * add 'make shell' to explore container
+* create reverse proxy image
+* configure apc
 * documentation: below 1.10 there is no tmpfs
 * graceful exit https://www.ctl.io/developers/blog/post/gracefully-stopping-docker-containers/
 
 ===[ Database ]===
 
 * mysql local changes into /etc/mysql/conf.d/ as specified at end of my.cnf
-* resource usage specification - how much is mysql allowed to consume resources?
 * postgres
 * graceful exit https://www.ctl.io/developers/blog/post/gracefully-stopping-docker-containers/
 * https://github.com/vishnubob/wait-for-it/blob/master/wait-for-it.sh
@@ -21,7 +21,7 @@
 
 * kitematic / docker-composer / https://github.com/james-nesbitt/coach
 * https://docs.docker.com/compose/compose-file/#variable-substitution
-* general git
+* resource usage specification - how much is mysql allowed to consume resources?
 * general cron
 * general full tgz backup of whole stuff with: make backup_full TARGET=...
 * general regular backups
