@@ -7,15 +7,19 @@
 * add vim and less to pkg, to investigate running container
 * add 'make shell' to explore container
 * documentation: below 1.10 there is no tmpfs
+* graceful exit https://www.ctl.io/developers/blog/post/gracefully-stopping-docker-containers/
 
 ===[ Database ]===
 
 * mysql local changes into /etc/mysql/conf.d/ as specified at end of my.cnf
 * resource usage specification - how much is mysql allowed to consume resources?
 * postgres
+* graceful exit https://www.ctl.io/developers/blog/post/gracefully-stopping-docker-containers/
+* https://github.com/vishnubob/wait-for-it/blob/master/wait-for-it.sh
 
 ===[ General ]===
 
+* kitematic / docker-composer / https://github.com/james-nesbitt/coach
 * general git
 * general cron
 * general full tgz backup of whole stuff with: make backup_full TARGET=...
