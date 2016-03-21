@@ -64,7 +64,6 @@ start: stop $(WEB_DATA_DIR)
 		-v "$(WEB_CACHE_DIR)"/:/data/cache/ \
 		-v "$(WEB_PRIVATE_DIR)"/:/private/ \
 		-v "$(WEB_LOGS_DIR)"/:/logs/ \
-		--tmpfs=/tmp \
 		--restart=unless-stopped \
 		--hostname="$(WEB_CONTAINER)" \
 		apache2-php5
@@ -74,6 +73,9 @@ stop:
 	@-docker rm `docker ps -a --filter name="$(WEB_CONTAINER)" --filter status=created --format '{{.ID}}'` >/dev/null 2>&1
 	@-docker stop `docker ps -a --filter name="$(WEB_CONTAINER)" --filter status=running --format '{{.ID}}'` >/dev/null 2>&1
 	@-docker rm `docker ps -a --filter name="$(WEB_CONTAINER)" --filter status=exited --format '{{.ID}}'` >/dev/null 2>&1
+
+shell:
+	@docker exec -it `docker ps -a --filter name="$(WEB_CONTAINER)" --filter status=running --format '{{.ID}}'` /bin/bash
 
 #
 #	backup & restore
