@@ -64,6 +64,7 @@ start: stop $(WEB_DATA_DIR)
 		-v "$(WEB_CACHE_DIR)"/:/data/cache/ \
 		-v "$(WEB_PRIVATE_DIR)"/:/private/ \
 		-v "$(WEB_LOGS_DIR)"/:/logs/ \
+		--tmpfs=/tmp \
 		--restart=unless-stopped \
 		--hostname="$(WEB_CONTAINER)" \
 		apache2-php5
