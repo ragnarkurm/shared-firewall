@@ -40,6 +40,11 @@ backup2:
 	make -C db backup BACKUP_DESTINATION="$(BACKUP_DESTINATION)/db"
 	make -C db start
 	make -C web start
+	@echo "----------------------------------------------"
+	@sudo du -sh "$(BACKUP_DESTINATION)" "$(BACKUPS)"
+	@echo "----------------------------------------------"
+	@sudo ls -la "$(BACKUPS)" | tail
+	@echo "----------------------------------------------"
 
 # need to do it in two steps since
 # make cannot assign variables in rules
