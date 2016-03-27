@@ -76,13 +76,13 @@ drush:
 	@docker run \
 		-it \
 		--rm \
-		--name $(DRUSH_CONTAINER) \
-		--link $(DB_CONTAINER):$(DB_LINK) \
-		-v $(WEB_CONF):/etc/apache2/sites-enabled/default.conf \
-		-v "$(WEB_DATA_DIR)"/:/data/ \
-		-v "$(WEB_FILES_DIR)"/:/data/sites/default/files/ \
-		-v "$(WEB_CACHE_DIR)"/:/data/cache/ \
-		-v "$(WEB_PRIVATE_DIR)"/:/private/ \
-		-v "$(WEB_LOGS_DIR)"/:/logs/ \
+		--name "$(DRUSH_CONTAINER)" \
+		--link "$(DB_CONTAINER):$(DB_LINK)" \
+		-v "$(WEB_CONF):/etc/apache2/sites-enabled/default.conf" \
+		-v "$(WEB_DATA_DIR)/:/data/" \
+		-v "$(WEB_FILES_DIR)/:/data/sites/default/files/" \
+		-v "$(WEB_CACHE_DIR)/:/data/cache/" \
+		-v "$(WEB_PRIVATE_DIR)/:/private/" \
+		-v "$(WEB_LOGS_DIR)/:/logs/" \
 		drush \
 		$(DRUSH_ARGS)

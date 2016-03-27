@@ -26,8 +26,8 @@ perms:
 	sudo chown -R "`id -u`:`id -g`" "$(WEB_DATA_DIR)"
 	sudo find "$(WEB_DATA_DIR)" -type d -exec chmod 0755 {} \;
 	sudo find "$(WEB_DATA_DIR)" -type f -exec chmod 0644 {} \;
-	sudo install -o www-data -g www-data -m 2775 -d "$(WEB_DATA_DIR)"/cache
-	sudo install -o www-data -g www-data -m 2775 -d "$(WEB_DATA_DIR)"/sites/default/files
+	sudo install -o www-data -g www-data -m 2775 -d "$(WEB_DATA_DIR)/cache"
+	sudo install -o www-data -g www-data -m 2775 -d "$(WEB_DATA_DIR)/sites/default/files"
 	true
 	sudo chown -R www-data:www-data "$(WEB_FILES_DIR)"
 	sudo find "$(WEB_FILES_DIR)" -type d -exec chmod 2775 {} \;
@@ -52,18 +52,18 @@ start: stop $(WEB_DATA_DIR)
 	@docker run \
 		-d \
 		--name "$(WEB_CONTAINER)" \
-		--link "$(DB_CONTAINER)":$(DB_LINK) \
-		-p "$(WEB_IP)":$(WEB_PORT):$(WEB_PORT) \
+		--link "$(DB_CONTAINER):$(DB_LINK)" \
+		-p "$(WEB_IP):$(WEB_PORT):$(WEB_PORT)" \
 		-e APACHE_SERVERNAME="$(WEB_DOMAIN)" \
 		-e APACHE_PORT="$(WEB_PORT)" \
 		-e APACHE_LOG_DIR="/logs" \
-		-v "$(WEB_CONF)":/etc/apache2/sites-enabled/default.conf \
-		-v "$(WEB_SSMTP)":/etc/ssmtp/ssmtp.conf \
-		-v "$(WEB_DATA_DIR)"/:/data/:$(WEB_DATA_ACCESS) \
-		-v "$(WEB_FILES_DIR)"/:/data/sites/default/files/ \
-		-v "$(WEB_CACHE_DIR)"/:/data/cache/ \
-		-v "$(WEB_PRIVATE_DIR)"/:/private/ \
-		-v "$(WEB_LOGS_DIR)"/:/logs/ \
+		-v "$(WEB_CONF):/etc/apache2/sites-enabled/default.conf" \
+		-v "$(WEB_SSMTP):/etc/ssmtp/ssmtp.conf" \
+		-v "$(WEB_DATA_DIR)/:/data/:$(WEB_DATA_ACCESS)" \
+		-v "$(WEB_FILES_DIR)/:/data/sites/default/files/" \
+		-v "$(WEB_CACHE_DIR)/:/data/cache/" \
+		-v "$(WEB_PRIVATE_DIR)/:/private/" \
+		-v "$(WEB_LOGS_DIR)/:/logs/" \
 		--tmpfs=/tmp \
 		--restart=unless-stopped \
 		--hostname="$(WEB_CONTAINER)" \

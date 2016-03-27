@@ -32,9 +32,9 @@ start: stop $(DB_DATA_DIR)
 		-d \
 		--name "$(DB_CONTAINER)" \
 		$(DB_INIT) \
-		-v "$(DB_CONF)":/etc/mysql/my.cnf \
-		-v "$(DB_DATA_DIR)/":/data/ \
-		-v "$(DB_LOGS_DIR)/":/logs/ \
+		-v "$(DB_CONF):/etc/mysql/my.cnf" \
+		-v "$(DB_DATA_DIR)/:/data/" \
+		-v "$(DB_LOGS_DIR)/:/logs/" \
 		--restart=unless-stopped \
 		mysql \
 		--general-log=0 \
