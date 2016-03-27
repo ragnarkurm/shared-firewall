@@ -1,0 +1,5 @@
+log_destination = 'stderr'		# Valid values are combinations of
+logging_collector = on			# Enable capturing of stderr and csvlog
+log_filename = '%Y%m%d-%H%M%S.log'	# log file name pattern,
+log_rotation_age = 0			# Automatic rotation of logfiles will
+log_rotation_size = 0			# Automatic rotation of logfiles will
