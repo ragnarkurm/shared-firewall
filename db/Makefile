@@ -41,9 +41,8 @@ start: stop $(DB_DATA_DIR)
 
 stop:
 	@echo "Stopping Db server"
-	@docker ps -a --filter name="$(DB_CONTAINER)" --filter status=created --format '{{.ID}}' | xargs -r docker rm
-	@docker ps -a --filter name="$(DB_CONTAINER)" --filter status=running --format '{{.ID}}' | xargs -r docker stop
-	@docker ps -a --filter name="$(DB_CONTAINER)" --filter status=exited --format '{{.ID}}' | xargs -r docker rm
+	@docker ps -a --filter name="$(DB_CONTAINER)" --format '{{.ID}}' | xargs -r docker stop
+	@docker ps -a --filter name="$(DB_CONTAINER)" --format '{{.ID}}' | xargs -r docker rm
 
 cli:
 	docker run \

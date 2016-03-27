@@ -71,9 +71,8 @@ start: stop $(WEB_DATA_DIR)
 
 stop:
 	@echo "Stopping Web server"
-	@docker ps -a --filter name="$(WEB_CONTAINER)" --filter status=created --format '{{.ID}}' | xargs -r docker rm
-	@docker ps -a --filter name="$(WEB_CONTAINER)" --filter status=running --format '{{.ID}}' | xargs -r docker stop
-	@docker ps -a --filter name="$(WEB_CONTAINER)" --filter status=exited --format '{{.ID}}' | xargs -r docker rm
+	@docker ps -a --filter name="$(WEB_CONTAINER)" --format '{{.ID}}' | xargs -r docker stop
+	@docker ps -a --filter name="$(WEB_CONTAINER)" --format '{{.ID}}' | xargs -r docker rm
 
 shell:
 	@docker exec -it `docker ps -a --filter name="$(WEB_CONTAINER)" --filter status=running --format '{{.ID}}'` /bin/bash
