@@ -1,6 +1,10 @@
 LogLevel info
 Listen ${APACHE_PORT}
 
+# prevent apache warning
+# AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using X.X.X.X. Set the 'ServerName' directive globally to suppress this message
+ServerName ${APACHE_SERVERNAME}
+
 # Read about optimization
 # http://www.liquidweb.com/kb/apache-optimization/
  
