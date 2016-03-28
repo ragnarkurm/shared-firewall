@@ -20,26 +20,26 @@ all:
 
 perms:
 	sudo chown -R www-data:www-data "$(WEB_CACHE_DIR)"
-	sudo find "$(WEB_CACHE_DIR)" -type d -exec chmod 2775 {} \;
-	sudo find "$(WEB_CACHE_DIR)" -type f -exec chmod 0664 {} \;
+	sudo find "$(WEB_CACHE_DIR)" -type d -print0 | sudo xargs -0 -r chmod 2775
+	sudo find "$(WEB_CACHE_DIR)" -type f -print0 | sudo xargs -0 -r chmod 0664
 	true
 	sudo chown -R "`id -u`:`id -g`" "$(WEB_DATA_DIR)"
-	sudo find "$(WEB_DATA_DIR)" -type d -exec chmod 0755 {} \;
-	sudo find "$(WEB_DATA_DIR)" -type f -exec chmod 0644 {} \;
+	sudo find "$(WEB_DATA_DIR)" -type d -print0 | sudo xargs -0 -r chmod 0755
+	sudo find "$(WEB_DATA_DIR)" -type f -print0 | sudo xargs -0 -r chmod 0644
 	sudo install -o www-data -g www-data -m 2775 -d "$(WEB_DATA_DIR)/cache"
 	sudo install -o www-data -g www-data -m 2775 -d "$(WEB_DATA_DIR)/sites/default/files"
 	true
 	sudo chown -R www-data:www-data "$(WEB_FILES_DIR)"
-	sudo find "$(WEB_FILES_DIR)" -type d -exec chmod 2775 {} \;
-	sudo find "$(WEB_FILES_DIR)" -type f -exec chmod 0664 {} \;
+	sudo find "$(WEB_FILES_DIR)" -type d -print0 | sudo xargs -0 -r chmod 2775
+	sudo find "$(WEB_FILES_DIR)" -type f -print0 | sudo xargs -0 -r chmod 0664
 	true
 	sudo chown -R root:root "$(WEB_LOGS_DIR)"
-	sudo find "$(WEB_LOGS_DIR)" -type d -exec chmod 0755 {} \;
-	sudo find "$(WEB_LOGS_DIR)" -type f -exec chmod 0644 {} \;
+	sudo find "$(WEB_LOGS_DIR)" -type d -print0 | sudo xargs -0 -r chmod 0755
+	sudo find "$(WEB_LOGS_DIR)" -type f -print0 | sudo xargs -0 -r chmod 0644
 	true
 	sudo chown -R www-data:www-data "$(WEB_PRIVATE_DIR)"
-	sudo find "$(WEB_PRIVATE_DIR)" -type d -exec chmod 2775 {} \;
-	sudo find "$(WEB_PRIVATE_DIR)" -type f -exec chmod 0664 {} \;
+	sudo find "$(WEB_PRIVATE_DIR)" -type d -print0 | sudo xargs -0 -r chmod 2775
+	sudo find "$(WEB_PRIVATE_DIR)" -type f -print0 | sudo xargs -0 -r chmod 0664
 
 start_rw:
 	make start WEB_DATA_ACCESS=rw
