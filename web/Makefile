@@ -57,6 +57,7 @@ start: stop $(WEB_DATA_DIR)
 		-e APACHE_SERVERNAME="$(WEB_DOMAIN)" \
 		-e APACHE_PORT="$(WEB_PORT)" \
 		-e APACHE_LOG_DIR="/logs" \
+		-e TERM=xterm \
 		-v ~/.bash_history:/root/.bash_history \
 		-v "$(WEB_CONF):/etc/apache2/sites-enabled/default.conf" \
 		-v "$(WEB_SSMTP):/etc/ssmtp/ssmtp.conf" \
