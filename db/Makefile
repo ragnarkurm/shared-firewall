@@ -44,7 +44,7 @@ stop:
 	@docker ps -a --filter name="$(DB_CONTAINER)" --format '{{.ID}}' | xargs -r docker rm
 
 cli:
-	docker run \
+	@docker run \
 		$(CLI_FLAGS) \
 		--link "$(DB_CONTAINER):$(DB_LINK)" \
 		--rm \
