@@ -1,6 +1,5 @@
 include ../conf/config.mk
 
-TIMEOUT = 30
 CLI_FLAGS=-it
 
 BACKUP_OBJECTS = \
@@ -66,9 +65,7 @@ build: $(shell basename "$(DB_PASS_FILE)") $(shell basename "$(DB_ROOT_FILE)")
 	touch "$(DB_LOGS_DIR)"/slow.log
 	make perms
 	make start DB_INIT="-e MYSQL_ROOT_PASSWORD='$(DB_ROOT)'"
-	@echo "Sleeping $(TIMEOUT) sec while initializing database"
-	docker logs -f -t "$(DB_CONTAINER)" &
-	@sleep $(TIMEOUT)
+	./waitbuild "$(DB_CONTAINER)"
 	echo "\
 		create database $(DB_NAME) default character set utf8 default collate utf8_general_ci; \
 		create user '$(DB_USER)'@'%' identified by '$(DB_PASS)'; \
