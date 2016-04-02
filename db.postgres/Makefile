@@ -1,7 +1,5 @@
 include ../conf/config.mk
 
-TIMEOUT = 15
-
 CLI_FLAGS=-it
 CONF_MAIN_HOST=$(DB_DATA_DIR)/postgresql.conf
 CONF_MAIN_CONTAINER=/data/postgresql.conf
@@ -75,9 +73,7 @@ build: $(shell basename "$(DB_ROOT_FILE)")
 	mkdir "$(DB_LOGS_DIR)"
 	make perms
 	make start DB_INIT=""
-	docker logs -f -t "$(DB_CONTAINER)" &
-	@echo "Sleeping $(TIMEOUT) sec while initializing database"
-	@sleep $(TIMEOUT)
+	./waitbuild "$(DB_CONTAINER)"
 	docker exec "$(DB_CONTAINER)" sh -c "echo \"include = '$(CONF_LOGGING_CONTAINER)'\" >> \"$(CONF_MAIN_CONTAINER)\""
 	
 	make start
