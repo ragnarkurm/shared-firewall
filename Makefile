@@ -1,5 +1,7 @@
 include conf/config.mk
 
+DRUSH_FLAGS = -it
+
 all:
 	@echo
 	@echo "make start"
@@ -72,9 +74,12 @@ restore2:
 #	drush
 #
 
+drush_notty:
+	make drush DRUSH_FLAGS=-i
+
 drush:
 	@docker run \
-		-it \
+		$(DRUSH_FLAGS) \
 		--rm \
 		--name "$(DRUSH_CONTAINER)" \
 		--link "$(DB_CONTAINER):$(DB_LINK)" \
