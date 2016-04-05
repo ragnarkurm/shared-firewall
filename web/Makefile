@@ -76,6 +76,9 @@ stop:
 	@docker ps -a --filter name="$(WEB_CONTAINER)" --format '{{.ID}}' | xargs -r docker stop
 	@docker ps -a --filter name="$(WEB_CONTAINER)" --format '{{.ID}}' | xargs -r docker rm
 
+console:
+	@docker logs -f "$(WEB_CONTAINER)"
+
 shell:
 	@docker exec -it `docker ps -a --filter name="$(WEB_CONTAINER)" --filter status=running --format '{{.ID}}'` /bin/bash
 
