@@ -31,7 +31,7 @@ perms:
 	sudo chown -R 999:0 "$(DB_DATA_DIR)" "$(DB_LOGS_DIR)"
 
 start: stop $(DB_DATA_DIR)
-	@echo "Starting Db server"
+	@echo "Starting container: $(DB_CONTAINER)"
 	docker run \
 		-d \
 		--name "$(DB_CONTAINER)" \
@@ -49,7 +49,7 @@ start: stop $(DB_DATA_DIR)
 		-c log_directory="/logs" \
 
 stop:
-	@echo "Stopping Db server"
+	@echo "Stopping container: $(DB_CONTAINER)"
 	@docker ps -a --filter name="$(DB_CONTAINER)" --format '{{.ID}}' | xargs -r docker stop
 	@docker ps -a --filter name="$(DB_CONTAINER)" --format '{{.ID}}' | xargs -r docker rm
 

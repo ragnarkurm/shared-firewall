@@ -48,7 +48,7 @@ start_rw:
 # for drupal internal access, drush and rev proxy
 
 start: stop $(WEB_DATA_DIR)
-	@echo "Starting Web server"
+	@echo "Starting container: $(WEB_CONTAINER)"
 	@docker run \
 		-d \
 		--name "$(WEB_CONTAINER)" \
@@ -72,7 +72,7 @@ start: stop $(WEB_DATA_DIR)
 		apache2-php5
 
 stop:
-	@echo "Stopping Web server"
+	@echo "Stopping container: $(WEB_CONTAINER)"
 	@docker ps -a --filter name="$(WEB_CONTAINER)" --format '{{.ID}}' | xargs -r docker stop
 	@docker ps -a --filter name="$(WEB_CONTAINER)" --format '{{.ID}}' | xargs -r docker rm
 
