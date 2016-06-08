@@ -28,13 +28,15 @@ perms:
 start: stop $(DB_DATA_DIR)
 	@echo "Starting container: $(DB_CONTAINER)"
 	@docker run \
-		-d \
-		--name "$(DB_CONTAINER)" \
 		$(DB_INIT) \
+		--detach \
+		--log-driver=syslog \
+		--log-opt tag=$(DB_CONTAINER) \
+		--name "$(DB_CONTAINER)" \
+		--restart=unless-stopped \
 		-v "$(DB_CONF):/etc/mysql/my.cnf" \
 		-v "$(DB_DATA_DIR)/:/data/" \
 		-v "$(DB_LOGS_DIR)/:/logs/" \
-		--restart=unless-stopped \
 		mysql \
 		--general-log=0 \
 

@@ -33,17 +33,19 @@ perms:
 start: stop $(DB_DATA_DIR)
 	@echo "Starting container: $(DB_CONTAINER)"
 	docker run \
-		-d \
-		--name "$(DB_CONTAINER)" \
 		$(DB_INIT) \
-		-e POSTGRES_PASSWORD='$(DB_ROOT)' \
+		--detach \
 		-e PGDATA=/data \
-		-e POSTGRES_USER="$(DB_USER)" \
 		-e POSTGRES_DB="$(DB_NAME)" \
+		-e POSTGRES_PASSWORD='$(DB_ROOT)' \
+		-e POSTGRES_USER="$(DB_USER)" \
+		--hostname="$(DB_LINK)" \
+		--log-driver=syslog \
+		--log-opt tag=$(DB_CONTAINER) \
+		--name "$(DB_CONTAINER)" \
+		--restart=unless-stopped \
 		-v "$(DB_DATA_DIR)/:/data/" \
 		-v "$(DB_LOGS_DIR)/:/logs/" \
-		--hostname="$(DB_LINK)" \
-		--restart=unless-stopped \
 		postgres \
 		-c config_file="$(CONF_MAIN_CONTAINER)" \
 		-c log_directory="/logs" \

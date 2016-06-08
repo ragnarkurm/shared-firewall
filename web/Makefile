@@ -50,25 +50,27 @@ start_rw:
 start: stop $(WEB_DATA_DIR)
 	@echo "Starting container: $(WEB_CONTAINER)"
 	@docker run \
-		-d \
-		--name "$(WEB_CONTAINER)" \
-		--link "$(DB_CONTAINER):$(DB_LINK)" \
-		-p "$(WEB_IP):$(WEB_PORT):$(WEB_PORT)" \
-		-e APACHE_SERVERNAME="$(WEB_DOMAIN)" \
-		-e APACHE_PORT="$(WEB_PORT)" \
+		--detach \
 		-e APACHE_LOG_DIR="/logs" \
+		-e APACHE_PORT="$(WEB_PORT)" \
+		-e APACHE_SERVERNAME="$(WEB_DOMAIN)" \
 		-e TERM=xterm \
+		--hostname="$(WEB_CONTAINER)" \
+		--link "$(DB_CONTAINER):$(DB_LINK)" \
+		--log-driver=syslog \
+		--log-opt tag=$(DB_CONTAINER) \
+		--name "$(WEB_CONTAINER)" \
+		-p "$(WEB_IP):$(WEB_PORT):$(WEB_PORT)" \
+		--restart=unless-stopped \
+		--tmpfs=/tmp \
 		-v ~/.bash_history:/root/.bash_history \
 		-v "$(WEB_CONF):/etc/apache2/sites-enabled/default.conf" \
-		-v "$(WEB_SSMTP):/etc/ssmtp/ssmtp.conf" \
 		-v "$(WEB_DATA_DIR)/:/data/:$(WEB_DATA_ACCESS)" \
-		-v "$(WEB_FILES_DIR)/:/data/sites/default/files/" \
 		-v "$(WEB_CACHE_DIR)/:/data/cache/" \
-		-v "$(WEB_PRIVATE_DIR)/:/private/" \
+		-v "$(WEB_FILES_DIR)/:/data/sites/default/files/" \
 		-v "$(WEB_LOGS_DIR)/:/logs/" \
-		--tmpfs=/tmp \
-		--restart=unless-stopped \
-		--hostname="$(WEB_CONTAINER)" \
+		-v "$(WEB_PRIVATE_DIR)/:/private/" \
+		-v "$(WEB_SSMTP):/etc/ssmtp/ssmtp.conf" \
 		apache2-php5
 
 stop:
