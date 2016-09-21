@@ -101,6 +101,8 @@ build: clean $(shell basename "$(DB_USER_PASS_FILE)") $(shell basename "$(DB_ROO
 clean: stop
 	sudo rm -rf "$(DB_DATA_DIR)"
 	sudo rm -rf "$(DB_LOGS_DIR)"
+	rm -f "$(DB_ROOT_PASS_FILE)"
+	rm -f "$(DB_USER_PASS_FILE)"
 
 #
 #	backup & restore
