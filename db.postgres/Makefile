@@ -3,11 +3,11 @@ include ../conf/config.mk
 CLI_FLAGS=-it
 CONF_MAIN_HOST=$(DB_DATA_DIR)/postgresql.conf
 CONF_MAIN_CONTAINER=/data/postgresql.conf
-CONF_LOGGING_HOST=$(DB_BASE)/postgresql-logging.conf
+CONF_LOGGING_HOST=$(DB_BASE_DIR)/postgresql-logging.conf
 CONF_LOGGING_CONTAINER=/data/postgresql-logging.conf
 DB_INIT=-v "$(CONF_LOGGING_HOST):$(CONF_LOGGING_CONTAINER)"
 HBA=/data/pg_hba.conf
-PGPASS_HOST=$(DB_BASE)/pgpass
+PGPASS_HOST=$(DB_BASE_DIR)/pgpass
 PGPASS_CONTAINER=/root/.pgpass
 
 BACKUP_OBJECTS = \
