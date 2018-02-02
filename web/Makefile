@@ -49,7 +49,7 @@ start_rw:
 
 start: stop $(WEB_DATA_DIR)
 	@echo "Starting container: $(WEB_CONTAINER)"
-	@docker run \
+	docker run \
 		--detach \
 		-e APACHE_LOG_DIR="/logs" \
 		-e APACHE_PORT="$(WEB_PORT)" \
@@ -62,16 +62,17 @@ start: stop $(WEB_DATA_DIR)
 		--name "$(WEB_CONTAINER)" \
 		-p "$(WEB_IP):$(WEB_PORT):$(WEB_PORT)" \
 		--restart=unless-stopped \
-		--tmpfs=/tmp \
 		-v ~/.bash_history:/root/.bash_history \
 		-v "$(WEB_CONF):/etc/apache2/sites-enabled/default.conf" \
-		-v "$(WEB_DATA_DIR)/:/data/:$(WEB_DATA_ACCESS)" \
+		-v "$(WEB_DATA_DIR)/:/data/" \
 		-v "$(WEB_CACHE_DIR)/:/data/cache/" \
 		-v "$(WEB_FILES_DIR)/:/data/sites/default/files/" \
 		-v "$(WEB_LOGS_DIR)/:/logs/" \
 		-v "$(WEB_PRIVATE_DIR)/:/private/" \
 		-v "$(WEB_SSMTP):/etc/ssmtp/ssmtp.conf" \
 		apache2-php5
+
+		# --tmpfs=/tmp \
 
 stop:
 	@echo "Stopping container: $(WEB_CONTAINER)"

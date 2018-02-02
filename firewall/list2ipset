@@ -1,0 +1,33 @@
+#!/usr/bin/php
+<?php
+
+if (count($argv) != 2) {
+  print "Usage: $argv[0] setname\n";
+  exit(1);
+}
+
+// make sure no crap leaks in
+// as we deal with shell command generation here
+$old = $argv[1];
+if (!preg_match('/^[a-z]{1,32}$/', $old)) {
+  print "Invalid setname: '$old'.\n";
+  print "Must be only lowercase, 1-32 letters.\n";
+  exit(1);
+}
+
+$new = 'tmp';
+
+$old = escapeshellarg($old);
+$new = escapeshellarg($new);
+
+$data = file_get_contents("php://stdin");
+$data = json_decode($data, false);
+printf("ipset create %s hash:ip\n", $new);
+foreach ($data as $d) {
+  list($ip, $mask) = $d;
+  $ip = escapeshellarg($ip);
+  $mask = escapeshellarg($mask);
+  printf("ipset add %s %s/%s\n", $new, $ip, $mask);
+}
+printf("ipset swap %s %s\n", $old, $new);
+printf("ipset destroy %s\n", $new);

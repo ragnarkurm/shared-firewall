@@ -1,0 +1,789 @@
+---kyVW6tIv---A--
+[02/Jul/2017:19:36:53 +0000] 149902421335.296072 172.17.0.1 57146 172.17.0.1 80
+---kyVW6tIv---B--
+GET /index.html HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+REQUEST_HEADERS:If-None-Match: "58457ee2-264"
+REQUEST_HEADERS:If-Modified-Since: Mon, 05 Dec 2016 14:51:14 GMT
+---kyVW6tIv---D--
+---kyVW6tIv---E--
+---kyVW6tIv---F--
+RESPONSE_HEADERS:ETag: "58457ee2-264"
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 19:36:53 GMT
+RESPONSE_HEADERS:Last-Modified: Mon, 05 Dec 2016 14:51:14 GMT
+---kyVW6tIv---H--
+---kyVW6tIv---I--
+---kyVW6tIv---J--
+---kyVW6tIv---Z--
+
+---0XNNsbNS---A--
+[02/Jul/2017:19:47:36 +0000] 149902485653.163697 172.17.0.1 57408 172.17.0.1 80
+---0XNNsbNS---B--
+GET /index.html HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+REQUEST_HEADERS:If-None-Match: "58457ee2-264"
+REQUEST_HEADERS:If-Modified-Since: Mon, 05 Dec 2016 14:51:14 GMT
+---0XNNsbNS---D--
+---0XNNsbNS---E--
+---0XNNsbNS---F--
+RESPONSE_HEADERS:ETag: "58457ee2-264"
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 19:47:36 GMT
+RESPONSE_HEADERS:Last-Modified: Mon, 05 Dec 2016 14:51:14 GMT
+---0XNNsbNS---H--
+---0XNNsbNS---I--
+---0XNNsbNS---J--
+---0XNNsbNS---Z--
+
+---M6n8sNVD---A--
+[02/Jul/2017:19:47:43 +0000] 149902486393.721544 172.17.0.1 57408 172.17.0.1 80
+---M6n8sNVD---B--
+GET /etc/password HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---M6n8sNVD---D--
+---M6n8sNVD---E--
+---M6n8sNVD---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 19:47:43 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---M6n8sNVD---H--
+---M6n8sNVD---I--
+---M6n8sNVD---J--
+---M6n8sNVD---Z--
+
+---vObe9Qwq---A--
+[02/Jul/2017:19:50:53 +0000] 149902505331.272528 172.17.0.1 57488 172.17.0.1 80
+---vObe9Qwq---B--
+GET /etc/password HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---vObe9Qwq---D--
+---vObe9Qwq---E--
+---vObe9Qwq---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 19:50:53 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---vObe9Qwq---H--
+---vObe9Qwq---I--
+---vObe9Qwq---J--
+---vObe9Qwq---Z--
+
+---2nCyE3bv---A--
+[02/Jul/2017:19:52:20 +0000] 149902514090.839232 172.17.0.1 57532 172.17.0.1 80
+---2nCyE3bv---B--
+GET /etc/password HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---2nCyE3bv---D--
+---2nCyE3bv---E--
+---2nCyE3bv---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 19:52:20 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---2nCyE3bv---H--
+---2nCyE3bv---I--
+---2nCyE3bv---J--
+---2nCyE3bv---Z--
+
+---tx02AQ2v---A--
+[02/Jul/2017:19:53:35 +0000] 149902521594.081592 172.17.0.1 57588 172.17.0.1 80
+---tx02AQ2v---B--
+GET /etc/password HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---tx02AQ2v---D--
+---tx02AQ2v---E--
+---tx02AQ2v---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 19:53:35 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---tx02AQ2v---H--
+---tx02AQ2v---I--
+---tx02AQ2v---J--
+---tx02AQ2v---Z--
+
+---xbPmEmVx---A--
+[02/Jul/2017:20:00:00 +0000] 149902560020.564496 172.17.0.1 57982 172.17.0.1 80
+---xbPmEmVx---B--
+GET /etc/password HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---xbPmEmVx---D--
+---xbPmEmVx---E--
+---xbPmEmVx---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:00:00 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---xbPmEmVx---H--
+---xbPmEmVx---I--
+---xbPmEmVx---J--
+---xbPmEmVx---Z--
+
+---YcMRIU5z---A--
+[02/Jul/2017:20:06:07 +0000] 149902596734.594335 172.17.0.1 58074 172.17.0.1 80
+---YcMRIU5z---B--
+GET /.sql/xxx HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---YcMRIU5z---D--
+---YcMRIU5z---E--
+---YcMRIU5z---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:06:07 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---YcMRIU5z---H--
+---YcMRIU5z---I--
+---YcMRIU5z---J--
+---YcMRIU5z---Z--
+
+---JUmDKEWC---A--
+[02/Jul/2017:20:06:17 +0000] 149902597792.259978 172.17.0.1 58074 172.17.0.1 80
+---JUmDKEWC---B--
+GET /.sql/ HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---JUmDKEWC---D--
+---JUmDKEWC---E--
+---JUmDKEWC---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:06:17 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---JUmDKEWC---H--
+---JUmDKEWC---I--
+---JUmDKEWC---J--
+---JUmDKEWC---Z--
+
+---lwWS1BmO---A--
+[02/Jul/2017:20:07:59 +0000] 14990260797.835537 172.17.0.1 58102 172.17.0.1 80
+---lwWS1BmO---B--
+GET /blaah.sql/ HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---lwWS1BmO---D--
+---lwWS1BmO---E--
+---lwWS1BmO---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:07:59 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---lwWS1BmO---H--
+---lwWS1BmO---I--
+---lwWS1BmO---J--
+---lwWS1BmO---Z--
+
+---xS8BBpmj---A--
+[02/Jul/2017:20:16:00 +0000] 149902656085.484235 172.17.0.1 58164 172.17.0.1 80
+---xS8BBpmj---B--
+GET /.htaccess HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---xS8BBpmj---D--
+---xS8BBpmj---E--
+---xS8BBpmj---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:16:00 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---xS8BBpmj---H--
+---xS8BBpmj---I--
+---xS8BBpmj---J--
+---xS8BBpmj---Z--
+
+---0f6r1RZL---A--
+[02/Jul/2017:20:16:23 +0000] 149902658331.605656 172.17.0.1 58188 172.17.0.1 80
+---0f6r1RZL---B--
+GET /.htaccess HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---0f6r1RZL---D--
+---0f6r1RZL---E--
+---0f6r1RZL---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:16:23 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---0f6r1RZL---H--
+---0f6r1RZL---I--
+---0f6r1RZL---J--
+---0f6r1RZL---Z--
+
+---POasRGGu---A--
+[02/Jul/2017:20:17:03 +0000] 149902662394.581936 172.17.0.1 58224 172.17.0.1 80
+---POasRGGu---B--
+GET /.git/ HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---POasRGGu---D--
+---POasRGGu---E--
+---POasRGGu---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:17:03 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---POasRGGu---H--
+---POasRGGu---I--
+---POasRGGu---J--
+---POasRGGu---Z--
+
+---ns1kxssb---A--
+[02/Jul/2017:20:17:15 +0000] 149902663520.193796 172.17.0.1 58224 172.17.0.1 80
+---ns1kxssb---B--
+GET /.git/ HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---ns1kxssb---D--
+---ns1kxssb---E--
+---ns1kxssb---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:17:15 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---ns1kxssb---H--
+---ns1kxssb---I--
+---ns1kxssb---J--
+---ns1kxssb---Z--
+
+---tjHlh4xm---A--
+[02/Jul/2017:20:17:19 +0000] 14990266393.629850 172.17.0.1 58224 172.17.0.1 80
+---tjHlh4xm---B--
+GET / HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---tjHlh4xm---D--
+---tjHlh4xm---E--
+---tjHlh4xm---F--
+RESPONSE_HEADERS:ETag: "58457ee2-264"
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:17:18 GMT
+RESPONSE_HEADERS:Content-Length: 612
+RESPONSE_HEADERS:Content-Type: text/html
+RESPONSE_HEADERS:Last-Modified: Mon, 05 Dec 2016 14:51:14 GMT
+RESPONSE_HEADERS:Accept-Ranges: bytes
+---tjHlh4xm---H--
+---tjHlh4xm---I--
+---tjHlh4xm---J--
+---tjHlh4xm---Z--
+
+---zZg3sJYI---A--
+[02/Jul/2017:20:17:24 +0000] 149902664494.949686 172.17.0.1 58224 172.17.0.1 80
+---zZg3sJYI---B--
+GET /.git/ HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---zZg3sJYI---D--
+---zZg3sJYI---E--
+---zZg3sJYI---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:17:24 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---zZg3sJYI---H--
+---zZg3sJYI---I--
+---zZg3sJYI---J--
+---zZg3sJYI---Z--
+
+---f986PP0C---A--
+[02/Jul/2017:20:17:30 +0000] 149902665011.448103 172.17.0.1 58224 172.17.0.1 80
+---f986PP0C---B--
+GET /.qwe/ HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---f986PP0C---D--
+---f986PP0C---E--
+---f986PP0C---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:17:30 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---f986PP0C---H--
+---f986PP0C---I--
+---f986PP0C---J--
+---f986PP0C---Z--
+
+---F2vCsnml---A--
+[02/Jul/2017:20:17:34 +0000] 149902665411.645078 172.17.0.1 58224 172.17.0.1 80
+---F2vCsnml---B--
+GET /.git/ HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---F2vCsnml---D--
+---F2vCsnml---E--
+---F2vCsnml---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:17:34 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---F2vCsnml---H--
+---F2vCsnml---I--
+---F2vCsnml---J--
+---F2vCsnml---Z--
+
+---W3UE8Ry7---A--
+[02/Jul/2017:20:17:49 +0000] 149902666917.007095 172.17.0.1 58224 172.17.0.1 80
+---W3UE8Ry7---B--
+GET /.gitignore HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---W3UE8Ry7---D--
+---W3UE8Ry7---E--
+---W3UE8Ry7---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:17:49 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---W3UE8Ry7---H--
+---W3UE8Ry7---I--
+---W3UE8Ry7---J--
+---W3UE8Ry7---Z--
+
+---0c8rvg9b---A--
+[02/Jul/2017:20:17:51 +0000] 149902667144.779553 172.17.0.1 58224 172.17.0.1 80
+---0c8rvg9b---B--
+GET /.gitignorex HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---0c8rvg9b---D--
+---0c8rvg9b---E--
+---0c8rvg9b---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:17:51 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---0c8rvg9b---H--
+---0c8rvg9b---I--
+---0c8rvg9b---J--
+---0c8rvg9b---Z--
+
+---nFfCceNr---A--
+[02/Jul/2017:20:17:56 +0000] 149902667688.849972 172.17.0.1 58224 172.17.0.1 80
+---nFfCceNr---B--
+GET /.gitignoreqweqweq HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---nFfCceNr---D--
+---nFfCceNr---E--
+---nFfCceNr---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:17:56 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---nFfCceNr---H--
+---nFfCceNr---I--
+---nFfCceNr---J--
+---nFfCceNr---Z--
+
+---eI2W3oFX---A--
+[02/Jul/2017:20:17:59 +0000] 149902667989.962741 172.17.0.1 58224 172.17.0.1 80
+---eI2W3oFX---B--
+GET /.gitignore HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---eI2W3oFX---D--
+---eI2W3oFX---E--
+---eI2W3oFX---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:17:59 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---eI2W3oFX---H--
+---eI2W3oFX---I--
+---eI2W3oFX---J--
+---eI2W3oFX---Z--
+
+---pjlx8h26---A--
+[02/Jul/2017:20:18:01 +0000] 149902668182.333325 172.17.0.1 58224 172.17.0.1 80
+---pjlx8h26---B--
+GET /.gitignor HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---pjlx8h26---D--
+---pjlx8h26---E--
+---pjlx8h26---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:18:01 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---pjlx8h26---H--
+---pjlx8h26---I--
+---pjlx8h26---J--
+---pjlx8h26---Z--
+
+---J8xDn4ma---A--
+[02/Jul/2017:20:18:04 +0000] 149902668494.257670 172.17.0.1 58224 172.17.0.1 80
+---J8xDn4ma---B--
+GET /.gitignore HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---J8xDn4ma---D--
+---J8xDn4ma---E--
+---J8xDn4ma---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:18:04 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---J8xDn4ma---H--
+---J8xDn4ma---I--
+---J8xDn4ma---J--
+---J8xDn4ma---Z--
+
+---IRlu38kh---A--
+[02/Jul/2017:20:18:18 +0000] 149902669827.243196 172.17.0.1 58224 172.17.0.1 80
+---IRlu38kh---B--
+GET /wp-config.php HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---IRlu38kh---D--
+---IRlu38kh---E--
+---IRlu38kh---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:18:18 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---IRlu38kh---H--
+---IRlu38kh---I--
+---IRlu38kh---J--
+---IRlu38kh---Z--
+
+---qS3gSAL2---A--
+[02/Jul/2017:20:50:00 +0000] 149902860081.053105 172.17.0.1 58758 172.17.0.1 80
+---qS3gSAL2---B--
+GET /test HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---qS3gSAL2---D--
+---qS3gSAL2---E--
+---qS3gSAL2---F--
+RESPONSE_HEADERS:Connection: keep-alive
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:50:00 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+---qS3gSAL2---H--
+---qS3gSAL2---I--
+---qS3gSAL2---J--
+---qS3gSAL2---Z--
+
+---Jigd3PNw---A--
+[02/Jul/2017:20:50:34 +0000] 149902863436.780493 172.17.0.1 58758 172.17.0.1 80
+---Jigd3PNw---B--
+GET /?testparam=test HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---Jigd3PNw---D--
+---Jigd3PNw---E--
+---Jigd3PNw---F--
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:50:34 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+RESPONSE_HEADERS:Connection: keep-alive
+---Jigd3PNw---H--
+---Jigd3PNw---I--
+---Jigd3PNw---J--
+---Jigd3PNw---Z--
+
+---w2TZ6phi---A--
+[02/Jul/2017:20:53:21 +0000] 149902880137.453241 172.17.0.1 58816 172.17.0.1 80
+---w2TZ6phi---B--
+GET /?testparam=test HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---w2TZ6phi---D--
+---w2TZ6phi---E--
+---w2TZ6phi---F--
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:53:21 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+RESPONSE_HEADERS:Connection: keep-alive
+---w2TZ6phi---H--
+---w2TZ6phi---I--
+---w2TZ6phi---J--
+---w2TZ6phi---Z--
+
+---uUQY3TCZ---A--
+[02/Jul/2017:20:53:33 +0000] 149902881348.308462 172.17.0.1 58838 172.17.0.1 80
+---uUQY3TCZ---B--
+GET /?testparam=test HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---uUQY3TCZ---D--
+---uUQY3TCZ---E--
+---uUQY3TCZ---F--
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:53:33 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+RESPONSE_HEADERS:Connection: keep-alive
+---uUQY3TCZ---H--
+---uUQY3TCZ---I--
+---uUQY3TCZ---J--
+---uUQY3TCZ---Z--
+
+---nFE7QTw2---A--
+[02/Jul/2017:20:54:08 +0000] 149902884815.154895 172.17.0.1 58838 172.17.0.1 80
+---nFE7QTw2---B--
+GET /?testparam=test HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---nFE7QTw2---D--
+---nFE7QTw2---E--
+---nFE7QTw2---F--
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 20:54:08 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+RESPONSE_HEADERS:Connection: keep-alive
+---nFE7QTw2---H--
+---nFE7QTw2---I--
+---nFE7QTw2---J--
+---nFE7QTw2---Z--
+
+---dgiictFA---A--
+[02/Jul/2017:21:06:26 +0000] 149902958689.458799 172.17.0.1 58952 172.17.0.1 80
+---dgiictFA---B--
+GET /?testparam=test HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---dgiictFA---D--
+---dgiictFA---E--
+---dgiictFA---F--
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 21:06:26 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+RESPONSE_HEADERS:Connection: keep-alive
+---dgiictFA---H--
+---dgiictFA---I--
+---dgiictFA---J--
+---dgiictFA---Z--
+
+---Dr160taD---A--
+[02/Jul/2017:21:07:04 +0000] 14990296245.784105 172.17.0.1 58976 172.17.0.1 80
+---Dr160taD---B--
+GET /?testparam=test HTTP/1.1
+REQUEST_HEADERS:Host: localhost:8888
+REQUEST_HEADERS:Connection: keep-alive
+REQUEST_HEADERS:Cache-Control: max-age=0
+REQUEST_HEADERS:Upgrade-Insecure-Requests: 1
+REQUEST_HEADERS:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36
+REQUEST_HEADERS:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+REQUEST_HEADERS:Accept-Encoding: gzip, deflate, sdch, br
+REQUEST_HEADERS:Accept-Language: en-GB,en;q=0.8,en-US;q=0.6,et;q=0.4,fi;q=0.2
+---Dr160taD---D--
+---Dr160taD---E--
+---Dr160taD---F--
+RESPONSE_HEADERS:Server: nginx/1.10.2
+RESPONSE_HEADERS:Date: Sun, 02 Jul 2017 21:07:04 GMT
+RESPONSE_HEADERS:Content-Length: 571
+RESPONSE_HEADERS:Content-Type: text/html
+RESPONSE_HEADERS:Connection: keep-alive
+---Dr160taD---H--
+---Dr160taD---I--
+---Dr160taD---J--
+---Dr160taD---Z--
+

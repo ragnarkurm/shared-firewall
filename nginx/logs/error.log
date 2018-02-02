@@ -1,0 +1,16 @@
+2017/07/02 19:47:43 [error] 5#0: *1 open() "/opt/spider/html/etc/password" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /etc/password HTTP/1.1", host: "localhost:8888"
+2017/07/02 19:49:32 [emerg] 1#0: unknown directive "SecRuleEngine" in /opt/spider/conf/nginx.conf:39
+2017/07/02 19:50:19 [emerg] 1#0: unknown directive "SecRuleEngine" in /opt/spider/conf/nginx.conf:34
+2017/07/02 19:50:36 [emerg] 1#0: unknown directive "SecRuleEngine" in /opt/spider/conf/nginx.conf:33
+2017/07/02 19:50:53 [error] 5#0: *1 open() "/opt/spider/html/etc/password" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /etc/password HTTP/1.1", host: "localhost:8888"
+2017/07/02 19:52:20 [error] 6#0: *1 open() "/opt/spider/html/etc/password" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /etc/password HTTP/1.1", host: "localhost:8888"
+2017/07/02 19:53:35 [error] 6#0: *3 open() "/opt/spider/html/etc/password" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /etc/password HTTP/1.1", host: "localhost:8888"
+2017/07/02 20:00:00 [error] 6#0: *5 open() "/opt/spider/html/etc/password" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /etc/password HTTP/1.1", host: "localhost:8888"
+2017/07/02 20:01:44 [emerg] 1#0: "root" directive Rules error. File: /opt/spider/conf/modsecurity.conf. Line: 1. Column: 1. invalid character a in /opt/spider/conf/nginx.conf:49
+2017/07/02 20:06:07 [error] 5#0: *1 open() "/opt/spider/html/.sql/xxx" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /.sql/xxx HTTP/1.1", host: "localhost:8888"
+2017/07/02 20:06:17 [error] 5#0: *1 "/opt/spider/html/.sql/index.html" is not found (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /.sql/ HTTP/1.1", host: "localhost:8888"
+2017/07/02 20:07:59 [error] 5#0: *4 "/opt/spider/html/blaah.sql/index.html" is not found (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /blaah.sql/ HTTP/1.1", host: "localhost:8888"
+2017/07/02 20:17:30 [error] 5#0: *1 "/opt/spider/html/.qwe/index.html" is not found (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /.qwe/ HTTP/1.1", host: "localhost:8888"
+2017/07/02 20:18:01 [error] 5#0: *1 open() "/opt/spider/html/.gitignor" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /.gitignor HTTP/1.1", host: "localhost:8888"
+2017/07/02 20:48:49 [emerg] 1#0: unknown directive "SecRule" in /opt/spider/conf/nginx.conf:42
+2017/07/02 20:50:00 [error] 5#0: *1 open() "/opt/spider/html/test" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "localhost:8888"
